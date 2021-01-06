@@ -1,0 +1,82 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 0.65;
+  background-color: white;
+}
+
+.chat__header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  background-color: #ededed;
+}
+
+.chat__headerInfo {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.chat__headerInfo > h3 {
+  font-weight: 400;
+}
+
+.chat__headerInfo > p {
+  font-size: 15px;
+  color: gray;
+}
+
+.chat__header > h4 {
+  font-weight: 500;
+  color: gray;
+}
+
+.chat__messages {
+  flex: 1;
+  background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+  background-repeat: repeat;
+  background-position: center;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.chat__input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  border-left: 1px solid lightgray;
+  background-color: #ededed;
+}
+
+.chat__input > form {
+  flex: 1;
+}
+
+.emoji-mart {
+  position: absolute !important;
+  top: -450px;
+  z-index: 999;
+  left: 15px;
+  width: 30vw !important;
+}
+
+.chat__input > form > input {
+  width: 95%;
+  outline-width: 0;
+  padding: 5px;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+}
+
+.chat__input > form > button {
+  display: none;
+}
+
+.chat__input > button {
+  margin: 0px 3px;
+  padding: 15px;
+  color: gray;
+}
